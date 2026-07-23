@@ -1,4 +1,4 @@
-# FLARE Tournament Hub v2
+# FLARE Tournament Hub v3
 
 FLARE 로고의 마젠타·블루 컬러와 폴리곤 형태를 반영한 GitHub Pages용 정적 사이트입니다.
 
@@ -34,3 +34,11 @@ T1 BASE CAMP 및 ZOWIE 프로젝트는 메인 사이트에서 제거했습니다
 - 메인 대회 목록: `index.html`
 - 오픈 리프트: `tournaments/open-rift/index.html`
 - 오버워치 썸머: `tournaments/ow-summer/index.html`
+
+
+## v3 변경사항
+- OW SUMMER 확정 일정 반영
+- 16강 싱글 → 8강 더블 엘리미네이션 브라켓 적용
+- FT2 / FT3 / FT4 경기 방식 표시
+- OWTICS, Discord, SOOP 공식 링크 연결
+- 참가 계정 및 출생일 자격 반영
