@@ -1,3 +1,19 @@
 
-const menu=document.querySelector('[data-menu]');const nav=document.querySelector('[data-nav]');if(menu&&nav){menu.addEventListener('click',()=>nav.classList.toggle('open'))}
-document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('[data-card]').forEach(c=>c.hidden=f!=='all'&&c.dataset.status!==f)}));
+const menu = document.querySelector("[data-menu]");
+const nav = document.querySelector("[data-nav]");
+
+if (menu && nav) {
+  menu.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    menu.setAttribute("aria-expanded", String(open));
+  });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});

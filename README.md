@@ -1,19 +1,36 @@
-# FLARE Tournament Hub
+# FLARE Tournament Hub v2
 
-GitHub Pages에 바로 올릴 수 있는 정적 사이트입니다.
+FLARE 로고의 마젠타·블루 컬러와 폴리곤 형태를 반영한 GitHub Pages용 정적 사이트입니다.
 
-## 배포
-1. GitHub 새 저장소 생성
-2. 이 폴더 안의 파일과 폴더를 저장소 최상위에 업로드
-3. Settings → Pages
-4. Deploy from a branch 선택
-5. main / root 선택 후 저장
+## 표시되는 대회
+
+- 2026 FLARE OPEN RIFT
+- 2026 OW FLARE COMMUNITY : SUMMER
+
+T1 BASE CAMP 및 ZOWIE 프로젝트는 메인 사이트에서 제거했습니다.
+
+## GitHub에 덮어쓰기
+
+1. 저장소에서 `Add file → Upload files`를 누릅니다.
+2. 이 ZIP의 압축을 푼 뒤, 안의 파일과 폴더를 전부 업로드합니다.
+3. 같은 이름의 파일이 있으면 GitHub가 변경 파일로 인식합니다.
+4. `Commit changes`를 누릅니다.
+5. 기존 `tournaments/t1-ascent`, `tournaments/zowie-pubg` 폴더가 남아 있어도 메인에서는 노출되지 않습니다.
+6. 완전히 삭제하려면 각 폴더 안 `index.html`을 열고 휴지통 아이콘으로 삭제합니다.
+
+## 구조
+
+- `index.html`
+- `assets/styles.css`
+- `assets/app.js`
+- `assets/flare-logo-square.png`
+- `assets/flare-logo-horizontal.png`
+- `tournaments/open-rift/index.html`
+- `tournaments/ow-summer/index.html`
 
 ## 수정
-- 메인 대회 목록: `index.html`
-- 대회별 내용: `tournaments/대회명/index.html`
-- 공통 디자인: `assets/styles.css`
-- 메뉴와 필터: `assets/app.js`
 
-## 새 대회 추가
-기존 대회 폴더를 복사한 뒤 텍스트를 수정하고, 메인 `index.html`에 카드를 하나 추가하세요.
+- 전체 디자인: `assets/styles.css`
+- 메인 대회 목록: `index.html`
+- 오픈 리프트: `tournaments/open-rift/index.html`
+- 오버워치 썸머: `tournaments/ow-summer/index.html`
